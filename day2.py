@@ -5,11 +5,11 @@ for _ in range(test_cases):
     mountain_heights = list(map(int, input().split()))
     auspicious_numbers = list(map(int, input().split()))
     
-
     freq = {}
     for h in mountain_heights:
         freq[h] = freq.get(h, 0) + 1
-    
+    # O(N)
+
     max_count = 0
     number_we_want = float('inf')
     
